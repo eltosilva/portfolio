@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #7ab6eb 5%, #050fa1 50%, #7ab6eb 95%);
+  color: #fff;
+}
+
+.main {
+  margin: .5rem;
+  padding: .5rem;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .main {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}

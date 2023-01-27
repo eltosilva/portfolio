@@ -1,0 +1,62 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.title {
+  text-align: center;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.information p {
+  margin: .5rem;
+  font-size: 1.125rem;
+}
+
+.information p::before {
+  content: '';
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: .5rem;
+}
+
+.information .person::before {
+  background-image: url('../img/do-utilizador.svg');
+}
+
+.information .address::before{
+  background-image: url('../img/marcador.svg');
+}
+
+.information .phone::before{
+  background-image: url('../img/whatsapp.svg');
+}
+
+.information .email::before {
+  background-image: url('../img/envelope.svg');
+}
+
+@media (min-width: 1024px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .information {
+    width: auto;
+  }
+}
