@@ -13,18 +13,57 @@
 </head>
 
 <body>
-  <div class="main">
+  <div class="container">
     <header>
-      <img src="./assets/img/foto de rosto.jpeg" alt="Foto de Elto O Silva" class="photo">
-      <h1 class="title">Elto Oliveira da Silva</h1>
-      <div class="information">
-        <p class="person">Junior Developer</p>
-        <p class="address">Parauapebas - PA</p>
-        <p class="phone">(94) 99219-3131</p>
-        <p class="email">petran.elto@outlook.com</p>
+      <div>
+        <img src="./assets/img/foto de rosto.jpeg" alt="Foto de Elto O Silva" class="header-photo">
+      </div>
+      <div>
+        <h1 class="header-title">Elto Oliveira da Silva</h1>
+        <div class="information">
+          <p class="person">Junior Developer</p>
+          <p class="address">Parauapebas - PA</p>
+          <p class="phone">(94) 99219-3131</p>
+          <p class="email">petran.elto@outlook.com</p>
+        </div>
       </div>
     </header>
+
+    <section class="skills">
+      <h2 class="section-title down-arrow" data-toggle="acordeon" data-target="skills">Skills</h2>
+      <div class="section-body occult" data-acordeon="skills">
+        <div class="box box-left">
+          <h3>Habilidades Profissionais</h3>
+        </div>
+        <div class="box box-right">
+          <h3>Habilidades Pessoais</h3>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title down-arrow" data-toggle="acordeon" data-target="idioma">Idiomas</h2>
+      <div class="section-body occult" data-acordeon="idioma">
+        <p>Inglês</p>
+      </div>
+    </section>
+
+    <section>
+      <H2 class="section-title down-arrow" data-toggle="acordeon" data-target="formation">Educação</H2>
+      <div class="section-body occult" data-acordeon="formation">
+        <p>UNOPAR</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title down-arrow" data-toggle="acordeon" data-target="portifolio">Portfólio</h2>
+      <div class="section-body occult" data-acordeon="portifolio">
+        <p>GITHUB</p>
+      </div>
+    </section>
   </div>
+  
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

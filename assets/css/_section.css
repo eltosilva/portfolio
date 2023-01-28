@@ -1,0 +1,55 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  border: 1px solid #fff;
+  border-radius: 1rem;
+  margin-top: .5rem;
+}
+
+section h2, section h3 {
+  text-align: center;
+  width: 100%;
+}
+
+.section-title {
+  cursor: pointer;
+}
+
+.section-title::after{
+  content: ' ';
+  margin-right: 1rem;
+  background-size: contain;
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  float: right;
+}
+
+.down-arrow::after{
+  background-image: url('../img/downarrowtriangleoutline.svg');
+}
+
+.up-arrow::after{
+  background-image: url('../img/uparrowtriangleoutline.svg');
+}
+
+.occult {
+  visibility: collapse;
+}
+
+.section-body {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+
+.hard {
+  grid-area: hard;
+}
+
+.soft {
+  grid-area: soft;
+}
